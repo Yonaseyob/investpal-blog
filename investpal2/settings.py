@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-yonaseyob-investpal-blog-ocws5yj3ah.us2.codeanyapp.com', 'investpal2.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-yonaseyob-investpal-blog-ocws5yj3ah.us2.codeanyapp.com', 'investpal2.herokuapp.com', 'investpal2-96a993dc0a64.herokuapp.com']
 
 
 # Application definition
