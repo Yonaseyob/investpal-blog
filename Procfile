@@ -1,0 +1,1 @@
+web: gunicorn investpal2.wsgi
