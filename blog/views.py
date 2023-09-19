@@ -9,6 +9,7 @@ from .forms import CommentForm, PostForm
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 
+
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
@@ -77,6 +78,7 @@ def post(self, request, slug, *args, **kwargs,):
         },
     )
 
+
 class AddPost(SuccessMessageMixin, LoginRequiredMixin, CreateView):
     model = Post
     template_name = 'addpost.html'
@@ -132,8 +134,3 @@ class Dislikes(View):
             post.dislikes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
-
-
-    
-
-

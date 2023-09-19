@@ -5,7 +5,7 @@ urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
     path('add_post/', views.AddPost.as_view(), name='add_post'),
     path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
-    path('like/<slug:slug>', views.PostLike.as_view(), name='post_likes'),
+    path('like/<slug:slug>', views.PostLike.as_view(), name='post_like'),
     path('dislike/<slug:slug>', views.Dislikes.as_view(), name='dislikes'),
     path('post/edit/<slug:slug>/', views.EditPost.as_view(), name='update_post'),
     path('delete/<slug:slug>/remove',
